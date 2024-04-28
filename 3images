@@ -1,7 +1,7 @@
 Practical 1:Install Docker on Ec2 Machine and Perform Life Cycle operation on any three Images including Nginx
 >sudo -i
 >docker run hello-world
->docker run --name mycetntos -d centos
+>docker run --name mycentos -d centos
 >docker run --name mynginx -p 7089:80 -d niginx
 >docker images
 >docker ps -a
