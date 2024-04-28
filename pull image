@@ -1,0 +1,9 @@
+docker pull registry:latest
+docker run -d -p 5000:5000 --name registry registry:latest
+now, pull centos: docker pull centos
+docker tag -imageid localhost:5000/centos
+docker push localhost::5000/centos
+docker images
+docker rmi -f imageid
+docker images
+docker ps
